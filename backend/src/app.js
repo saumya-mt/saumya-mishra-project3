@@ -15,7 +15,7 @@ const app = express();
 const clientOrigin = process.env.CLIENT_ORIGIN || "http://localhost:5173";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const distPath = path.resolve(__dirname, "../../dist");
+const distPath = path.resolve(__dirname, "../../frontend/dist");
 
 app.use(
   cors({
@@ -53,7 +53,7 @@ app.post("/api/logout", async (request, response, next) => {
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(distPath));
 
-  app.get("*", (request, response, next) => {
+  app.get("/{*path}", (request, response, next) => {
     if (request.path.startsWith("/api/")) {
       next();
       return;

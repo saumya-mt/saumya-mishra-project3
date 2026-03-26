@@ -1,7 +1,7 @@
 import GameProgress from "../models/GameProgress.js";
 import SudokuGame from "../models/SudokuGame.js";
 import User from "../models/User.js";
-import { buildCustomPuzzle, buildPuzzle } from "../../../src/utils/sudoku.js";
+import { buildCustomPuzzle, buildPuzzle } from "../../../frontend/src/utils/sudoku.js";
 import createHttpError from "../utils/httpError.js";
 import { generateGameName } from "../utils/gameNames.js";
 

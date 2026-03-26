@@ -7,7 +7,10 @@ let connectionPromise;
 
 export default function connectToDatabase() {
   if (!connectionPromise) {
-    const mongoUri = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/sudoku_project3";
+    const mongoUri =
+      process.env.MONGO ||
+      process.env.MONGODB_URI ||
+      "mongodb://127.0.0.1:27017/sudoku_project3";
     connectionPromise = mongoose.connect(mongoUri);
   }
 

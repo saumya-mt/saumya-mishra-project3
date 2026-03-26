@@ -1,7 +1,7 @@
 import app from "./src/app.js";
 import connectToDatabase from "./src/config/db.js";
 
-const PORT = Number(process.env.PORT || 3001);
+const PORT = Number(process.env.PORT || 8000);
 
 async function startServer() {
   try {

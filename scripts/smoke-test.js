@@ -2,8 +2,8 @@ import dotenv from "dotenv";
 import mongoose from "mongoose";
 import request from "supertest";
 import { MongoMemoryServer } from "mongodb-memory-server";
-import app from "../server/src/app.js";
-import connectToDatabase from "../server/src/config/db.js";
+import app from "../backend/src/app.js";
+import connectToDatabase from "../backend/src/config/db.js";
 
 dotenv.config();
 
@@ -14,7 +14,7 @@ async function run() {
       port: 27027,
     },
   });
-  process.env.MONGODB_URI = mongoServer.getUri();
+  process.env.MONGO = mongoServer.getUri();
   process.env.COOKIE_NAME = "sudoku_session";
 
   await connectToDatabase();

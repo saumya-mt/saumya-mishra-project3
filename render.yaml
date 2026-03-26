@@ -3,13 +3,17 @@ services:
     name: saumya-mishra-project3
     runtime: node
     buildCommand: npm install && npm run build
-    startCommand: npm start
+    startCommand: npm run prod
     envVars:
       - key: NODE_ENV
         value: production
+      - key: NODE_VERSION
+        value: 25.8.1
       - key: CLIENT_ORIGIN
         sync: false
       - key: COOKIE_NAME
         value: sudoku_session
+      - key: MONGO
+        sync: false
       - key: MONGODB_URI
         sync: false
