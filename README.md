@@ -4,8 +4,8 @@ Fullstack Sudoku app built with React, Vite, Express, MongoDB, and Mongoose.
 
 ## Project Links
 
-- GitHub Repo: `ADD_GITHUB_REPO_LINK_HERE`
-- Deployed App: `ADD_DEPLOYED_APP_LINK_HERE`
+- GitHub Repo: https://github.com/saumya-mt/saumya-mishra-project3
+- Deployed App: https://saumya-mishra-project3.onrender.com
 - Video Walkthrough: `ADD_VIDEO_LINK_HERE`
 
 ## Collaborator
