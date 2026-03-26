@@ -12,7 +12,9 @@ import userRouter from "./routes/userRoutes.js";
 dotenv.config();
 
 const app = express();
-const clientOrigin = process.env.CLIENT_ORIGIN || "http://localhost:5173";
+const clientOrigin = (process.env.CLIENT_ORIGIN || "http://localhost:5173")
+  .trim()
+  .replace(/^['"]|['"]$/g, "");
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const distPath = path.resolve(__dirname, "../../frontend/dist");
