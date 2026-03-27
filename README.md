@@ -6,7 +6,7 @@ Fullstack Sudoku app built with React, Vite, Express, MongoDB, and Mongoose.
 
 - GitHub Repo: https://github.com/saumya-mt/saumya-mishra-project3
 - Deployed App: https://saumya-mishra-project3.onrender.com
-- Video Walkthrough: `ADD_VIDEO_LINK_HERE`
+- Video Walkthrough: https://northeastern-my.sharepoint.com/personal/mishra_sau_northeastern_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fmishra_sau_northeastern_edu%2FDocuments%2FRecordings%2FWeb_development_project3-20260327_160326-Meeting+Recording.mp4&referrer=StreamWebApp.Web&referrerScenario=AddressBarCopied.view.54d30eb9-14f8-470a-9a96-1d03f2897ded
 
 ## Collaborator
 
@@ -44,8 +44,8 @@ Estimated time spent: about 20-25 hours total.
 
 ### 5. What bonus points did you accomplish? Please link to code where relevant and add any required details.
 
-- Password Encryption: Implemented with `bcryptjs`. Code: [userController.js](/Users/saumyamishra/Documents/saumya-mishra-project3/server/src/controllers/userController.js)
+- Password Encryption: Implemented with `bcryptjs`. Code: [userController.js](https://github.com/saumya-mt/saumya-mishra-project3/blob/main/backend/src/controllers/userController.js)
 
-- Delete Game: The creator can delete their own game, and user win counts are decremented for players who completed the deleted game. Code: [GamePage.jsx](/Users/saumyamishra/Documents/saumya-mishra-project3/src/pages/GamePage.jsx) and [sudokuController.js](/Users/saumyamishra/Documents/saumya-mishra-project3/server/src/controllers/sudokuController.js)
+- Delete Game: The creator can delete their own game, and user win counts are decremented for players who completed the deleted game. Code: [GamePage.jsx](https://github.com/saumya-mt/saumya-mishra-project3/blob/main/frontend/src/pages/GamePage.jsx) and [sudokuController.js](https://github.com/saumya-mt/saumya-mishra-project3/blob/main/backend/src/controllers/sudokuController.js)
 
-- Custom Games: A custom 9x9 board can be submitted and validated on the backend, and the puzzle is only accepted if it has exactly one valid solution. Code: [CustomGamePage.jsx](/Users/saumyamishra/Documents/saumya-mishra-project3/src/pages/CustomGamePage.jsx), [sudokuController.js](/Users/saumyamishra/Documents/saumya-mishra-project3/server/src/controllers/sudokuController.js), and [sudoku.js](/Users/saumyamishra/Documents/saumya-mishra-project3/src/utils/sudoku.js)
+- Custom Games: A custom 9x9 board can be submitted and validated on the backend, and the puzzle is only accepted if it has exactly one valid solution. Code: [CustomGamePage.jsx](https://github.com/saumya-mt/saumya-mishra-project3/blob/main/frontend/src/pages/CustomGamePage.jsx), [sudokuController.js](https://github.com/saumya-mt/saumya-mishra-project3/blob/main/backend/src/controllers/sudokuController.js), and [sudoku.js](https://github.com/saumya-mt/saumya-mishra-project3/blob/main/frontend/src/utils/sudoku.js)
